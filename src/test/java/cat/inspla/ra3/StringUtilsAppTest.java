@@ -7,14 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class StringUtilsAppTest {
 
     private final StringUtilsApp utils = new StringUtilsApp();
-/*
+
     @ParameterizedTest
     @CsvSource({
-        // TODO
+            "'hola   món', 'hola món'",
+            "'a    b     c', 'a b c'",
+            "'   espais   al   principi', 'espais al principi'",
+            "'final   d''espais   ', 'final d''espais'"
     })
-    void TODO_normalizeSpacesRedueixEspaisMultiples(String input, String expected) {
-        // TODO
+    void normalizeSpacesRedueixEspaisMultiples(String input, String expected) {
+        assertEquals(expected, utils.normalizeSpaces(input));
     }
-
- */
 }
